@@ -1,17 +1,21 @@
 <template>
     <div class="right">
-            <ul class="branch-list">
-              <li v-for="(option, index) in options" :key="index"><router-link to="#">{{ option }}</router-link></li>
-            </ul>
-          </div>
+        <ul class="branch-list">
+            <li>CSE</li>
+            <li>IT</li>
+            <li>EC</li>
+            <li>IC</li>
+            <li>ME</li>
+            <li>EE</li>
+            <li>CE</li>
+            <li>EEE</li>
+        </ul>
+    </div>
 </template>
 
 <script>
 export default {
     name: 'SingleOptionQuestion',
-    prop: {
-        option: Array
-    },
     data () {
         return {
             

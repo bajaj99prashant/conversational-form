@@ -1,21 +1,13 @@
 <template>
     <div class="right">
-        <div class="msg">{{ Answer }}</div>
+        <div class="msg">Dhruv Srivastava</div>
         <img src="@/assets/boy.png" class="chat-icon right-icon">
     </div>
 </template>
 
 <script>
 export default {
-    name: 'Answer',
-    prop: {
-        Answer: String
-    },
-    data () {
-        return {
-
-        }
-    }
+    name: 'Answer'
 }
 </script>
 
