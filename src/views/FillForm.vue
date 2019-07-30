@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import FillFormChat from '../components/FillFormChat'
-import AnswerInput from '../components/AnswerInput'
+import FillFormChat from '../components/fillForm/FillFormChat'
+import AnswerInput from '../components/fillForm/AnswerInput'
 
 export default {
     name: 'FillForm',

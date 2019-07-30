@@ -14,7 +14,7 @@
 
 <script>
 import Question from './Question'
-import SingleOption from './SingleOptionQuestion'
+import SingleOption from './SingleOptionAnswer'
 import Multiple from './MultipleOptionQuestion'
 import Answer from './Answer'
 

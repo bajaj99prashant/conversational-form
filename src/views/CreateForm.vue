@@ -9,17 +9,20 @@
         </aside>
         <main>
             <CreateFormChat />
+            <QuestionInput />
         </main>
     </div>
 </template>
 
 <script>
-import CreateFormChat from '../components/CreateFormChat'
+import CreateFormChat from '../components/createForm/CreateFormChat'
+import QuestionInput from '../components/createForm/QuestionInput'
 
 export default {
     name: 'CreateForm',
     components: {
-        CreateFormChat
+        CreateFormChat,
+        QuestionInput
     },
     data() {
         return{

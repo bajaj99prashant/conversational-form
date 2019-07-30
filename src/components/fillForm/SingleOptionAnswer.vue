@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: 'SingleOptionQuestion',
+    name: 'SingleOptionAnswer',
     data () {
         return {
             
