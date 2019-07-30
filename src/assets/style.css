@@ -20,18 +20,27 @@ body, html {
       width: 30vw;
       height: 100vh;
       float: left;
+      position: relative;
       background-image: url('../assets/aside.png');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       background-color: #9e00ff;
       background-blend-mode: multiply;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  aside>h5 {
+      padding-bottom: 2rem;
+      text-align: center;
+      color: white;
   }
   .aside-content {
       color: white;
       text-align: center;
       width: 70%;
-      margin: auto;
+      margin: 0 auto;
       padding-top: 5rem;
   }
   .aside-heading {
@@ -59,6 +68,46 @@ body, html {
     display: flex;
     overflow-y: auto;
     flex-direction: column;
+  }
+  .eventDetails {
+    padding: 0.75rem 1.5rem;
+  }
+  .title-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+  }
+  .layout>input {
+    color: #212121;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fafafa;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    border: 0.5px solid #e0e0e0;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    width: -webkit-fill-available;
+  }
+  .layout>input:focus {
+      outline: none;
+  }
+  .layout {
+      margin: 1rem auto;
+  }
+  .layout>label {
+      font-size: 0.875rem;
+      width: 100%;
+      color: #757575;
+      margin: 0.75rem auto;
+      padding: 0.5rem;
+  }
+  .event-title {
+      width: 62%;
+  }
+  .event-color-theme {
+      width: 32%;
   }
   .msg {
     max-width: 70%;
@@ -237,8 +286,21 @@ body, html {
         float: none;
         height: 80vh;
     }
+    aside>h5{
+        display: none;
+    }
     .aside-content{
-        padding-top: 7vh;
+        padding-top: 5vh;
+    }
+    .title-description {
+        flex-direction: column;
+        justify-content: inherit;
+    }
+    .event-title {
+        width: 100%;
+    }
+    .event-color-theme {
+        width: 100%;
     }
 }
 @media (max-width: 568px){
@@ -250,5 +312,8 @@ body, html {
     }
     main{
         height: 85vh;
+    }
+    .layout>label {
+        padding-left: 0.2rem;
     }
 }

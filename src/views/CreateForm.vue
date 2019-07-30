@@ -2,26 +2,24 @@
     <div class="main-container">
         <aside>
             <div class="aside-content">
-                <h1 class="aside-heading">NCS Chatbot</h1>
+                <h1 class="aside-heading">Chatbot - Form Builder</h1>
                 <p class="aside-paragraph" v-if='para'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci ipsum explicabo, tenetur voluptates voluptate distinctio quasi reprehenderit consequatur repudiandae corrupti accusamus aliquid natus incidunt aliquam id porro, sit neque itaque?</p>
             </div>
+            <h5>Made by Nibble Computer Society</h5>
         </aside>
         <main>
-            <FillFormChat />
-            <AnswerInput />
+            <CreateFormChat />
         </main>
     </div>
 </template>
 
 <script>
-import FillFormChat from './FillFormChat'
-import AnswerInput from './AnswerInput'
+import CreateFormChat from '../components/CreateFormChat'
 
 export default {
-    name: 'Structure',
+    name: 'CreateForm',
     components: {
-        FillFormChat,
-        AnswerInput
+        CreateFormChat
     },
     data() {
         return{
@@ -34,3 +32,4 @@ export default {
 <style>
 
 </style>
+
