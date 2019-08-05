@@ -1,35 +1,30 @@
 <template>
     <div class="message">
         <div class="message-list">
-            <Question/>
-            <Question/>
+            <Question querydata="HI, I am NCS conversational AI and you can talk to me normally."/>
             <Answer/>
-            <Question/>
-            <SingleOption/>
-            <Question/>
-            <Multiple/>
         </div>
     </div>
 </template>
 
 <script>
+import axios from 'axios'
 import Question from './Question'
-import SingleOption from './SingleOptionAnswer'
-import Multiple from './MultipleOptionQuestion'
 import Answer from './Answer'
 
 export default {
     name: 'FillFormChat',
     components: {
         Question,
-        SingleOption,
-        Multiple,
         Answer
     },
     data (){
         return {
             
         }
+    },
+    mounted() {
+
     }
 }
 </script>
